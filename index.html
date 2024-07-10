@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrinhas de César</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="zcriptografia.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Decifrando as cifrinhas</h1>
+        <p>Bem, aqui você pode criptografar ou descriptografar palavras baseando-se na Cifra de César: </p>
+        
+        <label for="palavrasOriginais">Palavras Originais:</label>
+        <textarea id="palavrasOriginais" rows="4"></textarea>
+        
+        <label for="deslocamento">Deslocamento:</label>
+        <input type="number" id="deslocamento" min="1" value="3">
+        
+        <button onclick="criptografar()">Criptografar</button>
+        
+        <label for="palavraCriptografada">Palavra Criptografada:</label>
+        <textarea id="palavraCriptografada" rows="4" readonly></textarea>
+        
+        <button onclick="descriptografar()">Descriptografar</button>
+        
+        <label for="palavrasDescriptografadas">Palavras Descriptografadas:</label>
+        <textarea id="palavrasDescriptografadas" rows="4" readonly></textarea>
+        
+    </div>
+</body>
+</html>
